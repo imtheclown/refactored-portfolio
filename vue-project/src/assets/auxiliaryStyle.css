@@ -1,0 +1,225 @@
+.mainFont{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.secondaryFont{
+    font-family: 'Poppins', sans-serif;
+}
+.contentFont{
+    font-family: 'Rubik', sans-serif;
+}
+.centerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+}
+.flex-justified{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backgroundColor{
+    background: linear-gradient(-190deg, #c93779,blueviolet, rgba(230, 214, 246, 0.2));
+}
+.landingPageColor{
+    color: goldenrod;
+}
+.gradientText {
+    /* Fallback: Set a background color. */
+    background-color: #CA4246;
+
+    /* Create the gradient. */
+    /*background-image: linear-gradient(*/
+    /*        45deg,*/
+    /*        #E16541 5%,*/
+    /*        #F18F43 33.333%,*/
+    /*        #F18F43 50%,*/
+    /*        goldenrod 33.333%,*/
+    /*        #8B9862 66.666%,*/
+    /*        #A7489B 83.333%);*/
+
+    background-image: linear-gradient(
+            45deg,
+            #E16541 15%,
+            #F18F43 33.333%,
+            #F18F43 40%,
+            goldenrod 50.333%,
+            #F0E800 75.666%,
+            #c8e177 90.333%);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #514747;
+
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+}
+
+.gradientText:hover{
+    animation: rainbowText-simple-animation 0.5s ease-in forwards;
+}
+
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbowText-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbowText-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+h1 {
+    font-weight: normal;
+    font-size: 6em;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    line-height: 7rem;
+}
+
+.card{
+    height: 100%;
+}
+.progContainer{
+    background:linear-gradient(black, purple);
+    margin: 2px;
+    padding: 2px;
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentBackground{
+
+}
+.whiteBackground{
+    background-color: white;
+}
+
+.lavenderBackground{
+    background-color: rgb(192, 134, 255, 0.6);
+}
+body{
+    background-color: rgba(211, 211, 211, 0.3);
+}
+
+
+
+.pl-gradient {
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    margin: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.fw-gradient {
+    background-image: linear-gradient(to right, #6441A5 0%, #2a0845  51%, #6441A5  100%);
+    margin: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+.cardFooterCenter{
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardFooterCenter-item{
+    padding: 10px;
+}
+.project{
+    cursor: pointer;
+}
+.project:hover{
+    border-radius: 10px;
+    transform: scale(101%);
+    background-image:linear-gradient(to bottom, #6441A5 0%, #2a0845  51%, #6441A5  40%) ;
+    z-index: 2;
+    transition: 0.2s;
+}
+.education{
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source:linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%) ;
+}
+.my-image{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.socials:hover{
+    transform: scale(110%);
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+}
+
+.socials {
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-color: white;
+    background-clip: padding-box;
+    border: 5px solid transparent;
+    border-radius: 10px;
+}
+
+.socials::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background-image: linear-gradient(
+            90deg,
+            hsl(289, 65%, 64%),
+            hsl(226, 78%, 67%)
+    );
+    border-radius: 10px;
+}
