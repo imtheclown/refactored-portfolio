@@ -50,7 +50,7 @@ import programmingLanguageContainer from "@/components/ProgrammingLanguageContai
   </body>
 </template>
 <style lang="scss">
-@import "../../css/mystyles.css";
+@import "../css/mystyles.css";
 @import "./assets/auxiliaryStyle.css";
 
 </style>

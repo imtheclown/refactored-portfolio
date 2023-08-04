@@ -18,7 +18,8 @@ export default{
       <p class ="card-header-title secondaryFont">{{education.school}}</p>
     </header>
     <div class="card-content">
-      <p>{{education.program}}-{{education.year}}</p>
+      <p>{{education.program}}</p>
+      <p>({{education.year}})</p>
     </div>
   </div>
 </template>

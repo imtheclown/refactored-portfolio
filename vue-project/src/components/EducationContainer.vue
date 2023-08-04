@@ -9,7 +9,7 @@ export default{
         {
           school: "University of the Philippines Visayas",
           address: "Miagao, Iloilo",
-          program: "Bachelor of Science in Computer Science",
+          program: "BS Computer Science",
           year: "2020-present"
         }
       ]
